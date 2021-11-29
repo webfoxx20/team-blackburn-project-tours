@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="section">
-      <Loading text="loading..." />
+      <Loading loader="loading..." />
     </div>
   );
 }
