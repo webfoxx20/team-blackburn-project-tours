@@ -2,7 +2,7 @@ import React from "react";
 
 function Button(props) {
   return (
-    <div className="btn">
+    <div className="btn ">
       <button>Not Interested</button>
     </div>
   );

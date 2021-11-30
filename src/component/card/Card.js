@@ -1,5 +1,6 @@
 import React from "react";
 import Description from "../desc/Description";
+import Button from "../button/Button";
 import "./Card.css";
 
 const Card = ({ cardData }) => {
@@ -10,6 +11,7 @@ const Card = ({ cardData }) => {
         <img src={data.image} />
         <div className="card-body">
           <Description description={data.info} maxLength={200} />
+          <Button />
         </div>
       </div>
     );

@@ -134,9 +134,10 @@ p {
   }
 }
 
-.btn Button {
+/* .btn Button {
   background: transparent;
-  display: inline-block;
+  display: block;
+  width: 200px;
   padding: 0.25rem 0.5rem;
   border-radius: var(--radius);
   text-transform: capitalize;
@@ -146,13 +147,24 @@ p {
   cursor: pointer;
   margin-top: 2rem;
   font-size: 1rem;
-  justify-content: center;
   border: 1px solid var(--clr-red-dark);
   text-decoration: var(--clr-red-dark);
+} */
+.btn Button {
+  display: block;
+  width: 200px;
+  font-size: 1rem;
+  margin: 1rem auto 0 auto;
+  color: var(--clr-red-dark);
+  letter-spacing: var(--spacing);
+  background: transparent;
+  border: 1px solid var(--clr-red-dark);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius);
 }
-.btn {
+/* .btn {
   justify-content: center;
-}
+} */
 
 main {
   width: 90vw;
