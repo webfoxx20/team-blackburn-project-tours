@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.show {
+  color: deepskyblue;
+}
+.show-more,
+.show-less {
+  cursor: pointer;
+}
+.description {
+  padding: 0.7rem 0;
+}
