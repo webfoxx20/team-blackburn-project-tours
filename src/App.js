@@ -1,23 +1,26 @@
 import React, { useState, useEffect } from "react";
-import Loading from "./component/loading/Loading";
+// import Loading from "./component/loading/Loading";
+import Price from "./component/loading/Price";
 import axios from "axios";
 
 function App() {
-  const [cardData, setCardData] = useState([]);
+  const [price, setPrice] = useState([]);
   const url = "https://course-api.com/react-tours-project";
   useEffect(() => {
-    const getData = async () => {
+    const getPrice = async () => {
       const response = await axios.get(url);
-      setCardData(response.data);
+      setPrice(response.data);
     };
-    getData();
+    getPrice();
   }, []);
   // here is  the data for the card
-  console.log(cardData);
+  console.log(price);
 
   return (
     <div className="section">
-      <Loading loader="loading..." />
+      <Price />
+      <Price />
+      <Price />
     </div>
   );
 }
