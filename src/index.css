@@ -134,6 +134,26 @@ p {
   }
 }
 
+.btn Button {
+  background: transparent;
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius);
+  text-transform: capitalize;
+  color: var(--clr-red-dark);
+  letter-spacing: var(--spacing);
+  border-color: transparent;
+  cursor: pointer;
+  margin-top: 2rem;
+  font-size: 1rem;
+  justify-content: center;
+  border: 1px solid var(--clr-red-dark);
+  text-decoration: var(--clr-red-dark);
+}
+.btn {
+  justify-content: center;
+}
+
 main {
   width: 90vw;
   max-width: var(--fixed-width);
