@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Loading from "./component/loading/Loading";
 import axios from "axios";
+import Card from "./component/card/Card";
 // import Description from "./component/desc/Description";
 
 function App() {
@@ -17,11 +18,14 @@ function App() {
   // here is  the data for the card
   console.log(cardData);
 
-  return (
-    <div className="section">
+  const renderCard = () => {
+    return cardData.length ? (
+      <Card cardData={cardData} />
+    ) : (
       <Loading loader="loading..." />
-    </div>
-  );
+    );
+  };
+  return <div className="section">{renderCard()}</div>;
 }
 
 export default App;
