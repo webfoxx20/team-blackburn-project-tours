@@ -134,22 +134,6 @@ p {
   }
 }
 
-/* .btn Button {
-  background: transparent;
-  display: block;
-  width: 200px;
-  padding: 0.25rem 0.5rem;
-  border-radius: var(--radius);
-  text-transform: capitalize;
-  color: var(--clr-red-dark);
-  letter-spacing: var(--spacing);
-  border-color: transparent;
-  cursor: pointer;
-  margin-top: 2rem;
-  font-size: 1rem;
-  border: 1px solid var(--clr-red-dark);
-  text-decoration: var(--clr-red-dark);
-} */
 .btn Button {
   display: block;
   width: 200px;
@@ -161,10 +145,8 @@ p {
   border: 1px solid var(--clr-red-dark);
   padding: 0.25rem 0.5rem;
   border-radius: var(--radius);
+  cursor: pointer;
 }
-/* .btn {
-  justify-content: center;
-} */
 
 main {
   width: 90vw;
@@ -174,17 +156,13 @@ main {
 
 /* heading */
 
-.title {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-.underline {
+/* .underline {
   width: 6rem;
   height: 0.25rem;
   background: var(--clr-primary-5);
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 /* card with image */
 .single-tour {

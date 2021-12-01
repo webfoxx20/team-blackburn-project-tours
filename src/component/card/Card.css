@@ -25,3 +25,18 @@
 .card-body {
   padding: 2rem;
 }
+
+/* .title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.title::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 5rem;
+  background-color: var(--clr-primary-5);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+} */

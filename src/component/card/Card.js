@@ -6,12 +6,12 @@ import Price from "../TourPrice/Price";
 import NoCards from "../NoCards/NoCards";
 
 const Card = ({ cardData }) => {
-  const [cards, setCards] = useState(cardData)
+  const [cards, setCards] = useState(cardData);
   console.log(cardData);
 
   const removeCard = (cardId) => {
-        setCards(cards.filter(card => card.id !== cardId))
-  }
+    setCards(cards.filter((card) => card.id !== cardId));
+  };
 
   const ShowCard = cards.map((data) => {
     return (
@@ -29,6 +29,7 @@ const Card = ({ cardData }) => {
 
   return (
     <main>
+      {/* {cards.length ? <h2 className="title">Our Tours</h2> : ""} */}
       {cards.length ? ShowCard : <NoCards />}
     </main>
   );
