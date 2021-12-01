@@ -3,6 +3,7 @@ import Description from "../desc/Description";
 import Button from "../button/Button";
 import "./Card.css";
 import Price from "../TourPrice/Price";
+import NoCards from "../NoCards/NoCards";
 
 const Card = ({ cardData }) => {
   const [cards, setCards] = useState(cardData)
@@ -25,7 +26,12 @@ const Card = ({ cardData }) => {
       </div>
     );
   });
-  return <main>{ShowCard}</main>;
+
+  return (
+    <main>
+      {cards.length ? ShowCard : <NoCards />}
+    </main>
+  );
 };
 
 export default Card;
