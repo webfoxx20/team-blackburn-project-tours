@@ -1,9 +1,9 @@
 import React from "react";
 
-function Button(props) {
+function Button({ id, removeCard }) {
   return (
     <div className="btn ">
-      <button>Not Interested</button>
+      <button onClick={() => removeCard(id)}>Not Interested</button>
     </div>
   );
 }

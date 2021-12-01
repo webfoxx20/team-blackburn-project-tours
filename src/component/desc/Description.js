@@ -30,16 +30,3 @@ const Description = ({ description, maxLength }) => {
 };
 
 export default Description;
-{
-  /* <div>
-{cardData && (
-  <div className="cardalldata">
-    {cardData.map((card, index) => (
-      <div key={index} className="description">
-        <Description description={card.info} maxLength={200} />
-      </div>
-    ))}
-  </div>
-)}
-</div> */
-}
