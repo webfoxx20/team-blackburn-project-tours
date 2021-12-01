@@ -29,7 +29,7 @@ const Card = ({ cardData }) => {
 
   return (
     <main>
-      {/* {cards.length ? <h2 className="title">Our Tours</h2> : ""} */}
+      {cards.length ? <h2 className="title">Our Tours</h2> : ""}
       {cards.length ? ShowCard : <NoCards />}
     </main>
   );
